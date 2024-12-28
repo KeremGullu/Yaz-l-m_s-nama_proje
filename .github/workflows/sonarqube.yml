@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python 3.11.0
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9
+          python-version: 3.11.0
       
       # Install dependencies
       - name: Install dependencies
@@ -34,5 +34,5 @@ jobs:
       - name: Run SonarQube analysis
         uses: SonarSource/sonarcloud-github-action@v1.5
         with:
-          sonar-token: ${{ sqa_e386b1ce4263b4900ee088f559aad2fb2ab96ddb}}
+          sonar-token: ${{ SONAR_TOKEN}}
           sonar-host-url: ${{http://localhost:9000 }}
