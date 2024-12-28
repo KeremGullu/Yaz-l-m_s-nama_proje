@@ -35,4 +35,4 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v1.5
         with:
           sonar-token: ${{secrets.sqa_e386b1ce4263b4900ee088f559aad2fb2ab96ddb}}
-          sonar-host-url: ${{secrets.http://localhost:9000 }}
+          sonar-host-url: http://localhost:9000
