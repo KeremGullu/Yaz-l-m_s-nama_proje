@@ -33,6 +33,10 @@ jobs:
       # Run SonarQube analysis
       - name: Run SonarQube analysis
         uses: SonarSource/sonarcloud-github-action@v1.5
+        env:
+          SONAR_TOKEN: ${{ secrets.sqa_e386b1ce4263b4900ee088f559aad2fb2ab96ddb }}
         with:
-          sonar-token: ${{secrets.sqa_e386b1ce4263b4900ee088f559aad2fb2ab96ddb}}
-          sonar-host-url: http://localhost:9000
+          args: >
+            -Dsonar.projectKey=your_project_key
+            -Dsonar.organization=your_organization
+            -Dsonar.host.url=http://localhost:9000
