@@ -34,7 +34,7 @@ jobs:
       - name: Run SonarQube analysis
         uses: SonarSource/sonarcloud-github-action@v1.5
         env:
-          SONAR_TOKEN: ${{ secrets.sqa_7ef1c49b901e8596f089c68e8e448a6b672e9d7c }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
             -Dsonar.projectKey=123
