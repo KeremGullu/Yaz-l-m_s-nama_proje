@@ -39,4 +39,4 @@ jobs:
           args: >
             -Dsonar.projectKey=123
             -Dsonar.organization=your_organization
-            -Dsonar.host.url=http://localhost:9000
+            -Dsonar.host.url={secrets.SONAR_HOST_URL}
